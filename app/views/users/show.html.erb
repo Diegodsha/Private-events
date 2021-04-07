@@ -1,9 +1,11 @@
 <p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
-
+<strong>These are your events:</strong>
+<%= @user.name.capitalize %>
+<%@user.events.each do |event|%>
+  <p><%=event.name%></p>
+  <p><%=event.description%></p>
+  <p><%=event.location%></p>
+  <p><%=event.date%></p>
+<% end %>
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

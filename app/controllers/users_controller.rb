@@ -8,6 +8,9 @@ class UsersController < ApplicationController
 
   # GET /users/1 or /users/1.json
   def show
+    @prev_events = @user.attended_events.where('date < ?', Time.now)
+
+    @upcoming_events = @user.attended_events.where('date > ?', Time.now)
   end
 
   # GET /users/new

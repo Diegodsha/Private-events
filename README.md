@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Club house (members-only)
+# Private events
 
 <p align="center">
     <a href="https://github.com/Diegodsha/Private-events/issues">
@@ -13,17 +13,25 @@
 
 ### This is a sneak peak of the app
 
-## Articles with a signed in user
+## Home view
 
-![login-articles](https://user-images.githubusercontent.com/70416006/113334407-e5c2a380-92e0-11eb-91a6-d9601f87517a.png)
+![home](https://user-images.githubusercontent.com/70416006/113929715-fc23a000-97b5-11eb-9789-37a5fae303ef.png)
 
-## Articles with no signed in user
+## Sign up
 
-![article-sigenout](https://user-images.githubusercontent.com/70416006/113334400-e52a0d00-92e0-11eb-95ea-5ac6047865d3.png)
+![signup](https://user-images.githubusercontent.com/70416006/113929713-fc23a000-97b5-11eb-8f23-3cb505ab58b8.png)
 
-## User trying to create, edit or destroy an articles without signin in
+## Events for user
 
-![signinmsg](https://user-images.githubusercontent.com/70416006/113334397-e4917680-92e0-11eb-86ce-c3e60c014301.png)
+![eventsuser](https://user-images.githubusercontent.com/70416006/113929700-fa59dc80-97b5-11eb-9fd6-45ed1f2e55f1.png)
+
+## All events
+
+![allevents](https://user-images.githubusercontent.com/70416006/113929694-f928af80-97b5-11eb-9d52-b5c7ed8b19b1.png)
+
+## Event details
+
+![eventdetails](https://user-images.githubusercontent.com/70416006/113929687-f7f78280-97b5-11eb-8f53-37af2c0060e8.png)
 
 ## Getting Started
 
@@ -44,21 +52,16 @@ To run this app simply follow the steps below:
 - Open your browser and type `http://localhost:3000` to enter the app
 - Available paths:
 
-    - Click on `Home` button or type `localhost:3000` to see All articles created
-    - Click on `Sign up` button or type `localhost:3000/users/new` to create an account
-    - Click on `New Event` button or type `localhost:3000/events/new` to login into the app
-    - Click on `All Events` button or type `localhost:3000/events` to login into the app
-
-  AFTER YOU CREATED AN ACCOUNT AND/OR LOGGED IN
-
-    - Click on `New article` button or type localhost:3000/artilces/new = Create a new article
-    - Click on `Link` button or type `localhost:3000/articles/article_id:` to see an specific article
-    - Click on `Pencil` button or type `localhost:3000/articles/article_id:/edit` to edit an specific article
-    - Click on `Trash can` button to delete an specific article
+  - Click on `Home` button or type `localhost:3000` to see all users created
+  - Click on `Show` button or type `localhost:3000/users/user_id` to see all events related to a specific user
+  - Click on `Sign up` button or type `localhost:3000/users/new` to create an account
+  - Click on `New Event` button or type `localhost:3000/events/new` to create a new event
+  - Click on `See All Events` button or type `localhost:3000/events` to see all upcoming and past events
 
 ### Description
 
-    App that includes CRUD for articles and user athentication with email and password
+    App that includes associations one to many, and many to many.
+    Also includes CRUD for Events and users, and user sign up  with email and name.
 
 ## Built With
 

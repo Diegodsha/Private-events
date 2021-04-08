@@ -22,3 +22,15 @@
 .nav li {
   padding-right: 1em;
 }
+
+.alert-box {
+  background: rgb(245, 120, 120);
+  color: rgb(154, 2, 2);
+  width: 30%;
+}
+
+.notice-box {
+  background: rgb(120, 245, 176);
+  color: rgb(25, 133, 4);
+  width: 30%;
+}

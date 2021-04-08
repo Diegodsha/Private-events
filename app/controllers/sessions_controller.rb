@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
 
     if @user
       session[:user_id] = @user.id
-      flash[:notice]='You are logged in succesfully'
+      flash[:notice] = 'You are logged in succesfully'
       redirect_to root_path
     else
       flash[:alert] = 'Please enter an existing e-mail or create an account'
@@ -18,7 +18,7 @@ class SessionsController < ApplicationController
 
   def destroy
     session.destroy
-    flash[:notice]='You are logged out'
+    flash[:notice] = 'You are logged out'
     redirect_to root_path
   end
 end

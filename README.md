@@ -58,6 +58,12 @@ To run this app simply follow the steps below:
   - Click on `New Event` button or type `localhost:3000/events/new` to create a new event
   - Click on `See All Events` button or type `localhost:3000/events` to see all upcoming and past events
 
+## How to run the test suite
+
+- Run `bundle exec rspec` to run all the test cases
+
+Note: Capybara uses by deafault firefox got to spec/rails_helper.rb and comment line 65
+
 ### Description
 
     App that includes associations one to many, and many to many.

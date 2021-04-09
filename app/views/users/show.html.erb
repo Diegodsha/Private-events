@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+<strong>User:</strong>
+<%= @user.name.capitalize %>
+<br />
+<br />
+<strong>Created events:</strong>
+<%@user.events.each do |event|%>
+  <p><%=event.name%></p>
+  <p><%=event.description%></p>
+  <p><%=event.location%></p>
+  <p><%=event.date%></p>
+  <hr>
+<% end %>
+<br>
+<br>
+<strong>Attended events:</strong>
+<%@user.attended_events.each do |event|%>
+  <p><%=event.name%></p>
+  <p><%=event.description%></p>
+  <p><%=event.location%></p>
+  <p><%=event.date%></p>
+  <hr>
+<% end %>
+<br>
+<br>
+<h3>Previous attended events</h3>
+<%@prev_events.each do |event|%>
+  <p><%=event.name%></p>
+  <p><%=event.description%></p>
+  <p><%=event.date%></p>
+  <hr>
+<% end %>
+<br>
+<br>
+<h3>Upcoming events</h3>
+<%@upcoming_events.each do |event|%>
+  <p><%=event.name%></p>
+  <p><%=event.description%></p>
+  <p><%=event.date%></p>
+  <hr>
+<% end %>
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
